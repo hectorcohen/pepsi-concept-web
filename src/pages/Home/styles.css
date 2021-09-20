@@ -1,0 +1,91 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.container-images{
+    width: 50%;
+}
+
+.container-images img{
+   width: 420px;
+    transform: rotate(10deg);
+}
+
+.container-texts{
+    width: 50%;
+    margin: 20px;
+    padding: 10px
+}
+
+.container-texts h1{
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    color: white;
+}
+
+.container-content-text{
+    width: 70%;
+}
+
+.container-content-text p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.container-texts button{
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container-networks{
+    display: flex;
+    align-items: center
+}
+
+.container-networks-icons{
+    margin: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+
+
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-images img{
+        margin-top: 10px;
+        width: 200px;
+        transform: rotate(90deg);
+    }
+
+    .container-texts{
+        width: 90%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container-texts h1{
+        font-size: 2rem;
+    }
+
+    .container-content-text{
+        width: 100%;
+    }
+    .container-content-text p{
+        font-size: 1rem;
+    }
+}
